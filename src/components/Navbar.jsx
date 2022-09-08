@@ -4,7 +4,7 @@ import styled from "styled-components";
 import {Badge} from '@material-ui/core';
 
 const Container = styled.div`
-  height: 60px;
+  // height: 60px;
 `;
 
 const Wrapper = styled.div`
