@@ -51,12 +51,13 @@ const ImageContainer = styledComponents.div`
     display:flex;
     align-items: center;
     justify-content: center;
-    flex: 1
+    // flex: 0.5
+    width: 40%
 `
 
 const Image = styledComponents.img`
     height: 70%;
-    flex: 1;
+    flex: 0.5;
 `
 
 const InfoContainer = styledComponents.div`
@@ -69,9 +70,10 @@ const Title = styledComponents.h1`
 `
 const Desc = styledComponents.p`
     font-size: 20px;
-    margin: 50px 0px;
+    margin: 35px 0px;
     font-weight: 500;
-    letter-spacing: 3px
+    letter-spacing: 3px;
+    padding: 12px
 `
 const Button = styledComponents.button`
    padding: 10px;

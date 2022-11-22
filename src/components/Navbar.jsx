@@ -2,9 +2,14 @@ import { Search, ShoppingCartOutlined} from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
 import {Badge} from '@material-ui/core';
+import { mobile } from "../responsive";
+
+
 
 const Container = styled.div`
-  // height: 60px;
+   /* height: 60px; */
+  /* ${mobile({backgroundColor: "red"})} */
+  ${mobile({ background: "red" })}
 `;
 
 const Wrapper = styled.div`
@@ -12,6 +17,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* ${mobile({ background: "red" })} */
 `;
 // Left side start
 const Left = styled.div`
@@ -30,10 +36,13 @@ const SearchContainer = styled.div`
   align-items: center;
   margin-left: 25px;
   padding: 5px;
+  border-radius: 8px;
+  outline: none
 `;
 
 const Input = styled.input`
   border: none;
+  
 `;
 // Left side end
 
@@ -75,7 +84,7 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>Michee's.</Logo>
+          <Logo>Active store.</Logo>
         </Center>
         <Right>
           <MenuItem>Register</MenuItem>
@@ -87,6 +96,7 @@ const Navbar = () => {
           </MenuItem>
         </Right>
       </Wrapper>
+    
     </Container>
   );
 };
